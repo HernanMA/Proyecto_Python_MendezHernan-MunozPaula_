@@ -1,3 +1,6 @@
+import Proyecto.Modulos.MCamper as CRUDC
+import Proyecto.Modulos.MTrainer as CRUDT
+
 def Menu_Principal(): 
     from colorama import Fore
     print(Fore.RED + """
@@ -58,13 +61,7 @@ def Menu_Coordinador ():
             |====================================|
         """)
     
-    print ("")
-    print ("=====================================")
-    opc = int(input("\n Ingrese la opcion que desea usar : "))
-    print ("")
-    print ("===================================== ")
-    print ("")
-    return opc 
+
 
 
     
