@@ -13,54 +13,54 @@ CAMPER_FIELDS = [
     "N_fijo",
 ]
 
-def load_data():
+def load_proyect():
     with open("Proyecto/campers.json", "r") as outfile:
         return json.load(outfile)
 
-def save_data(data):
+def save_proyect(proyect):
     with open("Proyecto/campers.json", "w") as outfile:
-        json.dump(data, outfile, indent=4)
+        json.dump(proyect, outfile, indent=4)
 
 def agregar_camper():
-    data = load_data()
+    proyect = load_proyect()
     nuevo_camper = {}
-    ultimo_id = max([camper["ID"] for camper in data["campers"]], default=0)
+    ultimo_id = max([camper["ID"] for camper in proyect["Campers"]], default=0)
     nuevo_camper["ID"] = ultimo_id + 1
     for field in CAMPER_FIELDS:
         nuevo_camper[field] = input(f"Ingrese {field} del nuevo camper: ")
     nuevo_camper["Estado"] = "Inscrito"
-    data["campers"].append(nuevo_camper)
-    save_data(data)
+    proyect["Campers"].append(nuevo_camper)
+    save_proyect(proyect)
 
 def mostrar_info_campers():
-    data = load_data()
+    proyect = load_proyect()
     ID_camper = int(input("Ingresa el id del Camper del que quieras ver la información: "))
     print("\n")
-    for camper in data["campers"]: 
+    for camper in proyect["Campers"]: 
         if camper["ID"] == ID_camper:
             for key, value in camper.items():
                 print(f"{key}: {value}")
             print("\n")
 
 def actualizar_campers():
-    data = load_data()
+    proyect = load_proyect()
     ID_camper = int(input("Ingresa el id del Camper que quieras actualizar: "))
-    for camper in data["campers"]:
+    for camper in proyect["Campers"]:
         if camper["ID"] == ID_camper:
             for field in CAMPER_FIELDS:
                 camper[field] = input(f"Ingrese el nuevo {field}: ")
-    save_data(data)
+    save_proyect(proyect)
 
 
 def prueba_inicial():
     with open("Proyecto/campers.json", "r") as outfile:
-        Data = json.load(outfile)
-        campers = Data["campers"]
+        Proyect = json.load(outfile)
+        Campers = Proyect["Campers"]
 
     while True:
         try:
             ID_camper = int(input("Ingresa el id del Camper del cual deseas ingresar la nota de su prueba inicial: "))
-            for camper in campers:
+            for camper in Campers:
                 if camper["ID"] == ID_camper:
                     while True:
                         try:
@@ -76,7 +76,7 @@ def prueba_inicial():
                                             else:
                                                 camper["Estado"] = "Reprobado"
                                             break  
-                                            print("Nota no válida, ingresa un valor de 0 a 100")
+                                        print("Nota no válida, ingresa un valor de 0 a 100")
                                     except ValueError:
                                         print("Por favor, ingresa un valor numérico.")
                                 break  
@@ -90,4 +90,4 @@ def prueba_inicial():
             print("Por favor, ingresa un valor numérico para el ID del Camper.")
 
     with open("Proyecto/campers.json", "w") as outfile:
-        json.dump(Data, outfile, indent=4)
+        json.dump(Proyect, outfile, indent=4)

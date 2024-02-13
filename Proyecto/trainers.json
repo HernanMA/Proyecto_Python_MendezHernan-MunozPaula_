@@ -2,7 +2,7 @@
     {
         "identificacion": 10025923,
         "nombre": "Francisco",
-        "apellidos": "Velez ni\u00c3\u00b1o",
+        "apellidos": "Velez ",
         "Especialidad": "JavaScript",
         "horario": "Nocturno",
         "Celular": "318201924"
@@ -10,7 +10,7 @@
     {
         "identificacion": 10025923,
         "nombre": "Juan",
-        "apellidos": "mari\u00c3\u00b1o",
+        "apellidos": "mari",
         "Especialidad": "NodeJS ",
         "horario": "Nocturno",
         "Celular": "322019252"

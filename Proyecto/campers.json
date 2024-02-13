@@ -1,3 +1,18 @@
 {
-    "Campers": []
+    "Campers": [
+        {
+            "ID": 1,
+            "N_documento": "1101",
+            "nombre": "QQQQ",
+            "nombre2": "WWWW",
+            "apellido": "EEEE",
+            "apellido2": "RRRR",
+            "ciudad": "CCCC",
+            "Direccion": "SDSD",
+            "Acudiente": "XXXXXXX",
+            "N_celular": "22222",
+            "N_fijo": "1111",
+            "Estado": "Inscrito"
+        }
+    ]
 }
