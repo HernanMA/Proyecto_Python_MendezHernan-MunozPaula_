@@ -3,11 +3,11 @@ from os import system
 
 def registrar_trainer():
     with open("Proyecto/trainers.json", "r") as outfile:
-        Data = json.load(outfile)
+        Proyect = json.load(outfile)
 
 
     nuevo_trainer = {}
-    ultimo_id = max([trainer["ID"] for trainer in Data["Trainers"]], default=0)
+    ultimo_id = max([trainer["ID"] for trainer in Proyect["Trainers"]], default=0)
     nuevo_id = ultimo_id + 1
     nuevo_trainer["ID"] = nuevo_id
     nuevo_trainer["N_documento"] = input("Ingrese el numero de documento del nuevo trainer: ")
@@ -16,16 +16,16 @@ def registrar_trainer():
     nuevo_trainer["N_celular"] = input("Ingrese el numero de celular del nuevo trainer: ")
     nuevo_trainer["Horario"] = "No asignado"
 
-    Data["trainers"].append(nuevo_trainer)
+    Proyect["Trainers"].append(nuevo_trainer)
 
     with open("Proyecto/trainers.json", "w") as outfile:
-        json.dump(Data, outfile, indent=4)
+        json.dump(Proyect, outfile, indent=4)
 
 def mostrar_info_trainers():
     with open("Proyecto/trainers.json", "r") as outfile:
-        Data = json.load(outfile)
+        Proyect = json.load(outfile)
 
-        trainers = Data["trainers"]
+        trainers = Proyect["Trainers"]
         while True:
             try:
                 ID_trainer = int(input("Ingresa el id del Trainer del que quieras ver la información: "))
@@ -42,9 +42,9 @@ def mostrar_info_trainers():
         
 def horario_trainer():
     with open("Proyecto/trainers.json", "r") as outfile:
-        Data = json.load(outfile)
+        Proyect = json.load(outfile)
 
-        trainers = Data["trainers"]
+        trainers = Proyect["Trainers"]
     while True:
         try:
             ID_trainer = int(input("ingrese el ID del trainer al cual desea asignarle un horario: "))
@@ -86,7 +86,7 @@ def horario_trainer():
         break            
 
     with open("Proyecto/trainers.json", "w") as outfile:
-        json.dump(Data, outfile, indent=4)                
+        json.dump(Proyect, outfile, indent=4)                
 
 
         

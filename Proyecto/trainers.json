@@ -14,7 +14,15 @@
             "nombre": "Miguel",
             "apellido": "Noce",
             "N_celular": "345345345",
-            "Horario": "6:00 p.m - 10:00 p.m"
+            "Horario": "10:00 a.m - 2:00 p.m"
+        },
+        {
+            "ID": 3,
+            "N_documento": "2",
+            "nombre": "S",
+            "apellido": "S",
+            "N_celular": "3",
+            "Horario": "No asignado"
         }
     ]
 }
