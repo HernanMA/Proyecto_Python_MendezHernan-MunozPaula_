@@ -1,50 +1,20 @@
-[
-    {
-        "identificacion": 10025923,
-        "nombre": "Francisco",
-        "apellidos": "Velez ",
-        "Especialidad": "JavaScript",
-        "horario": "Nocturno",
-        "Celular": "318201924"
-    },
-    {
-        "identificacion": 10025923,
-        "nombre": "Juan",
-        "apellidos": "mari",
-        "Especialidad": "NodeJS ",
-        "horario": "Nocturno",
-        "Celular": "322019252"
-    },
-    {
-        "identificacion": 1201221,
-        "nombre": "camilo",
-        "apellidos": "tarazone",
-        "Especialidad": "java",
-        "horario": "Diurno",
-        "Celular": "317282893"
-    },
-    {
-        "identificacion": 190293,
-        "nombre": "pedro",
-        "apellidos": "jaramillo",
-        "Especialidad": "html",
-        "horario": "Matutino",
-        "Celular": "3128483092"
-    },
-    {
-        "identificacion": 1,
-        "nombre": "pepe",
-        "apellidos": "ete",
-        "Especialidad": "sech",
-        "horario": "Diurno",
-        "Celular": "1929203"
-    },
-    {
-        "identificacion": 1,
-        "nombre": "pepe",
-        "apellidos": "ete",
-        "Especialidad": "sech",
-        "horario": "Diurno",
-        "Celular": "1929203"
-    }
-]
+{
+    "Trainers": [
+        {
+            "ID": 1,
+            "N_documento": "2121212",
+            "nombre": "Pedro",
+            "apellido": "Gomez",
+            "N_celular": "3145644",
+            "Horario": "10:00 a.m - 2:00 p.m"
+        },
+        {
+            "ID": 2,
+            "N_documento": "12343234",
+            "nombre": "Miguel",
+            "apellido": "Noce",
+            "N_celular": "345345345",
+            "Horario": "6:00 p.m - 10:00 p.m"
+        }
+    ]
+}

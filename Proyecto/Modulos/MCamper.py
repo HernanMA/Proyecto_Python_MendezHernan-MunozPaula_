@@ -1,16 +1,16 @@
 import json
 
 CAMPER_FIELDS = [
-    "N_documento",
+    "número de documento",
     "nombre",
-    "nombre2",
-    "apellido",
-    "apellido2",
+    "segundo nombre",
+    "primer apellido",
+    "segundo apellido",
     "ciudad",
-    "Direccion",
-    "Acudiente",
-    "N_celular",
-    "N_fijo",
+    "dirección",
+    "nombre del acudiente",
+    "número telefónico",
+    "número fijo",
 ]
 
 def load_proyect():

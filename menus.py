@@ -1,16 +1,19 @@
 import Proyecto.Modulos.MCamper as CRUDC
 import Proyecto.Modulos.MTrainer as CRUDT
+import Proyecto.Modulos.areas_Entrenamiento as CRUDA
 from os import system
 
 def Menu_Principal(): 
     from colorama import Fore
     print(Fore.RED + """
             |====================================|
-            |            MENÚ PRINCIPAL          |
+            |              PERFILES              |
             |====================================|
-            | 1. Coordinadores                   |
-            | 2. Trainers                        |
-            | 4. Salir                           |
+            |   Por favor selecciona un perfin   |
+            |                                    |
+            | 1. Perfil de coordinador           |
+            | 2. Perfil de Trainers              |
+            | 3. Salir                           |
             |====================================|
         """)
 
@@ -18,20 +21,20 @@ def Menu_Trainer ():
     from colorama import Fore
     print(Fore.YELLOW + """
             |====================================|
-            |            MENÚ TRAINER            |
+            |          PERFIL TRAINER            |
             |====================================|
             | 1. Agregar nuevo trainer           |
             | 2. Mostrar información de trainers |
             | 3. asignar horario del trainer     |
-            | 4. Exit     |
+            | 4. Exit                            |
             |====================================|
         """)
 
-def Menu_Camper() : 
+def Menu_Coordinador() : 
     from colorama import Fore
     print(Fore.BLUE + """
             |====================================|
-            |           MENÚ Camper              |
+            |          PERFIL COORDINADOR        |
             |====================================|
             | 1. Agregar nuevo camper            |
             | 2. Mostrar información de campers  |
@@ -39,7 +42,8 @@ def Menu_Camper() :
             |    campers ya registrados          |
             | 4. Registrar notas prueba de       |
             |    admisión                        |
-            | 5. Atrás                           |
+            | 5. Crear nuevo salón               |
+            | 6. Atrás                           |
             |====================================|
         """)
 
@@ -50,7 +54,7 @@ def main():
         system("clear")
         if opcion == '1':
             while True:
-                Menu_Camper()
+                Menu_Coordinador()
                 opcion = input("Seleccione una opción: ")
                 system("clear")
                 if opcion == '1':
@@ -60,8 +64,10 @@ def main():
                 elif opcion == '3':
                     CRUDC.actualizar_campers()
                 elif opcion == '4':
-                    CRUDC.prueba_inicial()    
+                    CRUDC.prueba_inicial()
                 elif opcion == '5':
+                    CRUDA.Crear_Area()        
+                elif opcion == '6':
                     break
                 else:
                     print("Opción inválida. Por favor, seleccione una opción válida.")
