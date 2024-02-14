@@ -3,16 +3,24 @@
         {
             "ID": 1,
             "N_documento": "1101",
-            "nombre": "QQQQ",
+            "nombre": "dddd",
             "nombre2": "WWWW",
             "apellido": "EEEE",
             "apellido2": "RRRR",
-            "ciudad": "CCCC",
+            "ciudad": "eeee",
             "Direccion": "SDSD",
             "Acudiente": "XXXXXXX",
             "N_celular": "22222",
             "N_fijo": "1111",
-            "Estado": "Reprobado"
+            "Estado": "Reprobado",
+            "n\u00famero de documento": "212",
+            "segundo nombre": "sss",
+            "primer apellido": "xxx",
+            "segundo apellido": "sss",
+            "direcci\u00f3n": "wwww",
+            "nombre del acudiente": "sss",
+            "n\u00famero telef\u00f3nico": "333",
+            "n\u00famero fijo": "222"
         },
         {
             "ID": 2,
@@ -40,7 +48,7 @@
             "Nombre del acudiente": "Mama",
             "N\u00famero telef\u00f3nico": "321",
             "N\u00famero fijo": "322",
-            "Estado": "Inscrito"
+            "Estado": "Reprobado"
         },
         {
             "ID": 4,
@@ -68,6 +76,34 @@
             "nombre del acudiente": "rfrfr",
             "n\u00famero telef\u00f3nico": "2332",
             "n\u00famero fijo": "233",
+            "Estado": "Inscrito"
+        },
+        {
+            "ID": 6,
+            "n\u00famero de documento": "1",
+            "nombre": "sss",
+            "segundo nombre": "aaa",
+            "primer apellido": "ddd",
+            "segundo apellido": "ddd",
+            "ciudad": "cccc",
+            "direcci\u00f3n": "fff",
+            "nombre del acudiente": "xxx",
+            "n\u00famero telef\u00f3nico": "333",
+            "n\u00famero fijo": "222",
+            "Estado": "Inscrito"
+        },
+        {
+            "ID": 7,
+            "n\u00famero de documento": "1",
+            "nombre": "s",
+            "segundo nombre": "s",
+            "primer apellido": "s",
+            "segundo apellido": "c",
+            "ciudad": "x",
+            "direcci\u00f3n": "xx",
+            "nombre del acudiente": "cc",
+            "n\u00famero telef\u00f3nico": "22",
+            "n\u00famero fijo": "22",
             "Estado": "Inscrito"
         }
     ]

@@ -18,10 +18,10 @@
         },
         {
             "Id": 3,
-            "nombre del grupo": "fff",
-            "Trainer_encargado": "Pedro",
+            "nombre del grupo": "eeee",
+            "Trainer_encargado": "Miguel",
             "Horario_de_grupo": "10:00 a.m - 2:00 p.m",
-            "Ruta": "Java",
+            "Ruta": "NetCore",
             "Area": "Apolo"
         }
     ]
