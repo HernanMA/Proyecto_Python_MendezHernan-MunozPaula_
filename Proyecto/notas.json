@@ -1,5 +1,11 @@
 {
-    "notas": [
-        
-    ]
+    "Notas": " ",
+    "1": [
+        {
+            "nombre del modulo": "Fundamentos de programacion",
+            "nota final del modulo": 49.5
+        }
+    ],
+    "Modulos_superaron_60": 0,
+    "Modulos_no_superaron_60": 1
 }

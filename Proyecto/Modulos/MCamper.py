@@ -68,34 +68,53 @@ def actualizar_campers():
         save_proyect(proyect)
     else:
         print("Camper no encontrado, por favor ingresa un ID válido.")
-def solicitar_nota(mensaje):
+
+
+
+
+def ingresar_numero(mensaje):
     while True:
-        try:
-            nota = int(input(mensaje))
-            if 0 <= nota <= 100:
-                return nota
-            else:
-                print("Nota no válida, ingresa un valor de 0 a 100")
-        except ValueError:
-            print("Por favor, ingresa un valor numérico.")
+        valor = input(mensaje)
+        if valor.isdigit():
+            return int(valor)
+        print("Por favor, ingrese un valor numérico.")
+
+def ingresar_nota(mensaje):
+    while True:
+        nota = ingresar_numero(mensaje)
+        if 0 <= nota <= 100:
+            return nota
+        print("Por favor ingresa un valor de 0 a 100")
+
+def cargar_datos(ruta):
+    with open(ruta, "r") as archivo:
+        return json.load(archivo)
+
+def guardar_datos(datos, ruta):
+    with open(ruta, "w") as archivo:
+        json.dump(datos, archivo, indent=4)
+
+def obtener_camper_por_id(campers, id_camper):
+    for camper in campers:
+        if camper["ID"] == id_camper:
+            return camper
+    return None
 
 def actualizar_estado(camper, nota_practica, nota_teorica):
     nota_ingreso = nota_practica + nota_teorica / 2
-    if nota_ingreso >= 60:
-        camper["Estado"] = "En proceso de ingreso"
-    else:
-        camper["Estado"] = "Reprobado"
-        
-def prueba_inicial():
-    Proyect = load_proyect()
-    Campers = Proyect["Campers"]
+    camper["Estado"] = "Aprobado" if nota_ingreso >= 60 else "Reprobado"
 
-    ID_camper = solicitar_numero("Ingresa el id del Camper del cual deseas ingresar la nota de su prueba inicial: ")
-    camper = buscar_camper(Campers, ID_camper)
+def prueba_inicial():
+    datos = cargar_datos("Proyecto/inscritos_Campers.json")
+    campers = datos["Campers"]
+
+    id_camper = ingresar_numero("Ingresa el id del Camper del cual deseas ingresar la nota de su prueba inicial: ")
+    camper = obtener_camper_por_id(campers, id_camper)
+
     if camper is not None:
-        nota_practica = solicitar_nota("Ingrese la nota práctica de la prueba inicial: ")
-        nota_teorica = solicitar_nota("Ingrese la nota teórica de la prueba inicial: ")
+        nota_practica = ingresar_nota("Ingrese la nota práctica de la prueba inicial: ")
+        nota_teorica = ingresar_nota("Ingrese la nota teórica de la prueba inicial: ")
         actualizar_estado(camper, nota_practica, nota_teorica)
-        save_proyect(Proyect)
+        guardar_datos(datos, "Proyecto/inscritos_Campers.json")
     else:
         print("Camper no encontrado, por favor ingresa un ID válido.")

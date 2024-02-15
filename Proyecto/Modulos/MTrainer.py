@@ -39,55 +39,66 @@ def mostrar_info_trainers():
             except ValueError:
                 print("\nPor favor ingrese un  valor numerico")            
             break    
-        
-def horario_trainer():
-    with open("Proyecto/trainers.json", "r") as outfile:
-        Proyect = json.load(outfile)
+    
 
-        trainers = Proyect["Trainers"]
+def jornada_trainer():
+    with open("Proyecto/Trainers.json", "r") as outfile:
+        Data = json.load(outfile)
+
+    trainers = Data["Trainers"]
     while True:
         try:
-            ID_trainer = int(input("ingrese el ID del trainer al cual desea asignarle un horario: "))
+            ID_trainer = int(input("Ingrese el ID del trainer al cual desea asignarle un horario: "))
             for trainer in trainers:
-
                 if trainer["ID"] == ID_trainer:
-                    print("""\n
-        ========================================  
-        |               HORARIOS               |
-        |        1.   6:00 a.m - 10:00 a.m     |
-        |        2.   10:00 a.m - 2:00 p.m     |
-        |        3.   2:00 p.m - 6:00 p.m      |
-        |        4.   6:00 p.m - 10:00 p.m     |
-        ========================================
-        """)
+                    print("\nJornadas:")
+                    print("1. Mañana (6:00 a.m - 2:00 p.m)")
+                    print("2. Tarde (2:00 p.m - 10:00 p.m)")
                     
-                    opcion = input("Seleccione el horario a asignar: ")
+                    opcion = input("Seleccione la jornada que desea asignar: ")
                     system("clear")
-                    
+
                     if opcion == '1':
-                        horario = "6:00 a.m - 10:00 a.m"
-                        trainer["Horario"] = horario
-                        
+                        jornada = "Manana"
+                        trainer["Jornada"] = jornada
                     elif opcion == '2':
-                        horario = "10:00 a.m - 2:00 p.m"
-                        trainer["Horario"] = horario  
-                        
-                    elif opcion == '3':
-                        horario = "2:00 p.m - 6:00 p.m"
-                        trainer["Horario"] = horario
-                        
-                    elif opcion == '4':
-                        horario = "6:00 p.m - 10:00 p.m"
-                        trainer["Horario"] = horario
+                        jornada = "Tarde"
+                        trainer["Jornada"] = jornada
                     else:
-                        print("Ingrese una opcion válida ")
+                        print("Ingrese una opción válida")
         except ValueError:
-            print("\nIngresa un valor numerico ")                     
-        break            
+            print("\nIngrese un valor numérico")
+        break
 
-    with open("Proyecto/trainers.json", "w") as outfile:
-        json.dump(Proyect, outfile, indent=4)                
+    with open("Proyecto/Trainers.json", "w") as outfile:
+        json.dump(Data, outfile, indent=4)
 
+def actualizar_trainers():
+    editacion = open("Proyecto/Trainers.json")
+    Data = json.load(editacion)
+    trainers = Data["Trainers"]
+    ID_trainer = int(input("Ingresa el id del trainer que quieras actualizar: "))
+    for trainer in trainers:
+        if trainer["ID"] == ID_trainer:
+            
+            N_documento = input("Ingresa el nuevo numero de documento: ")
+            nombre = input("Ingresa el nuevo primer nombre: ") 
+            apellido = input("Ingresa el nuevo apellido: ")
+            N_celular = input("Ingresa el nuevo numero de celular: ")
+            
+            trainer["N_documento"] = N_documento
+            trainer["nombre"] = nombre
+            trainer["apellido"] = apellido
+            trainer["N_celular"] = N_celular
+    
+    with open("Proyecto/Trainers.json", "w") as outfile:
+        json.dump(Data, outfile, indent=4)        
+
+
+        
+        
+
+    
 
         
         
