@@ -29,20 +29,6 @@
             "Estado": "Inscrito"
         },
         {
-            "ID": 3,
-            "N\u00famero de documento": "1101685607",
-            "Nombre": "Hernan",
-            "Segundo nombre": "No aplica",
-            "Primer apellido": "Mendez",
-            "Segundo apellido": "Guerrero",
-            "Ciudad": "Bucaramanga",
-            "Direcci\u00f3n": "Calle 12",
-            "Nombre del acudiente": "Mama",
-            "N\u00famero telef\u00f3nico": "321",
-            "N\u00famero fijo": "322",
-            "Estado": "Reprobado"
-        },
-        {
             "ID": 4,
             "n\u00famero de documento": "212",
             "nombre": "efwec",

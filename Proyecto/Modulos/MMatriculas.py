@@ -10,16 +10,9 @@ def matriculas():
     with open("Proyecto/campers_Reprobados.json", "r") as file:
         reprobados = json.load(file)
 
-    with open("Proyecto/grupos.json", "r") as file:
-        grupos = json.load(file)
-
-    with open("Proyecto/salon_Grupos.json", "r") as file:
-        salones = json.load(file)
-
     inscritos = inscritos["Campers"]
     aprobados = aprobados["Aprobados"]
     reprobados = reprobados["Reprobados"]
-    grupos = grupos["Grupos"]
 
     campers_Mover = int(input("Ingrese el ID del camper que desea matricular: "))
     
@@ -35,10 +28,13 @@ def matriculas():
                 aprobados.append(inscritos[i])
                 with open("Proyecto/campers_Aprobados.json", "w") as outfile:
                     json.dump({"Aprobados": aprobados}, outfile, indent=4)
-                   
             else:
                 inscritos[i]["Estado"] = "Reprobado"
                 reprobados.append(inscritos[i])
                 with open("Proyecto/campers_Reprobados.json", "w") as outfile:
                     json.dump({"Reprobados": reprobados}, outfile, indent=4)
-                     
+
+    # Actualizar el archivo de inscritos
+    inscritos = [camper for camper in inscritos if camper['ID'] != campers_Mover]
+    with open("Proyecto/inscritos_Campers.json", "w") as outfile:
+        json.dump({"Campers": inscritos}, outfile, indent=4)

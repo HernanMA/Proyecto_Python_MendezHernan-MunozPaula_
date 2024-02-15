@@ -27,6 +27,34 @@
             "n\u00famero telef\u00f3nico": "2332",
             "n\u00famero fijo": "233",
             "Estado": "Reprobado"
+        },
+        {
+            "ID": 7,
+            "n\u00famero de documento": "1",
+            "nombre": "s",
+            "segundo nombre": "s",
+            "primer apellido": "s",
+            "segundo apellido": "c",
+            "ciudad": "x",
+            "direcci\u00f3n": "xx",
+            "nombre del acudiente": "cc",
+            "n\u00famero telef\u00f3nico": "22",
+            "n\u00famero fijo": "22",
+            "Estado": "Reprobado"
+        },
+        {
+            "ID": 3,
+            "N\u00famero de documento": "1101685607",
+            "Nombre": "Hernan",
+            "Segundo nombre": "No aplica",
+            "Primer apellido": "Mendez",
+            "Segundo apellido": "Guerrero",
+            "Ciudad": "Bucaramanga",
+            "Direcci\u00f3n": "Calle 12",
+            "Nombre del acudiente": "Mama",
+            "N\u00famero telef\u00f3nico": "321",
+            "N\u00famero fijo": "322",
+            "Estado": "Reprobado"
         }
     ]
 }
