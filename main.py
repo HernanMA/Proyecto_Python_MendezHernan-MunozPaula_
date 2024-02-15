@@ -2,6 +2,7 @@ from Proyecto.menus import Menu_Principal, Menu_Coordinador, Menu_Trainer
 import Proyecto.Modulos.MCamper as CRUDC
 import Proyecto.Modulos.MTrainer as CRUDT
 import Proyecto.Modulos.MMatriculas as CRUDM
+import Proyecto.Modulos.gestion_rutas as CRUDR
 from os import system
 
 def main():
@@ -25,6 +26,8 @@ def main():
                 elif opcion == '5':
                     CRUDM.matriculas()        
                 elif opcion == '6':
+                    CRUDR.agregar_estudiante()        
+                elif opcion == '7':
                     break
                 else:
                     print("Opción inválida. Por favor, seleccione una opción válida.")

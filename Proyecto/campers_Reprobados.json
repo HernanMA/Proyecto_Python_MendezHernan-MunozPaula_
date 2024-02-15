@@ -55,6 +55,20 @@
             "N\u00famero telef\u00f3nico": "321",
             "N\u00famero fijo": "322",
             "Estado": "Reprobado"
+        },
+        {
+            "ID": 1,
+            "N_documento": "1101",
+            "nombre": "dddd",
+            "nombre2": "WWWW",
+            "apellido": "EEEE",
+            "apellido2": "RRRR",
+            "ciudad": "eeee",
+            "Direccion": "SDSD",
+            "Acudiente": "XXXXXXX",
+            "N_celular": "22222",
+            "N_fijo": "1111",
+            "Estado": "Reprobado"
         }
     ]
 }

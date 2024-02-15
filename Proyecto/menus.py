@@ -14,7 +14,7 @@ def Menu_Principal():
 
 def Menu_Trainer (): 
     from colorama import Fore
-    print(Fore.YELLOW + """
+    print(Fore.GREEN + """
             |====================================|
             |          PERFIL TRAINER            |
             |====================================|
@@ -38,7 +38,8 @@ def Menu_Coordinador() :
             | 4. Registrar notas prueba de       |
             |    admisión                        |
             | 5. Matricular camper               |
-            | 6. Atrás                           |
+            | 6. Rutas                           |
+            | 7. Salir                           |
             |====================================|
         """)
 
