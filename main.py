@@ -32,7 +32,7 @@ def main():
                 elif opcion == '7':
                     CRUDS.metercamper_salon()
                 elif opcion == '8':
-                    CRUDS.mostrar_info_salones
+                    CRUDS.mostrar_info_salones()
                 elif opcion == '9':
                     CRUDN.registrar_notas_filtros()
                 elif opcion == '10':

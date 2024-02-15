@@ -1,5 +1,22 @@
 {
-    "Salones" : [
-        
+    "Salones": [
+        {
+            "Id": 1,
+            "nombre del grupo": "dsdsf",
+            "Ruta": "NodeJS",
+            "Salon": "Sputnik",
+            "Fecha de inicio": "23-23",
+            "Fecha de finalizacion": "23",
+            "Horario": "2:00 pm - 6:00 pm",
+            "Trainer_encargado": "Nose",
+            "Campers_registrados": [
+                {
+                    "ID": 1,
+                    "n\u00famero de documento": "1101685607",
+                    "nombre": "Hernan",
+                    "primer apellido": "Mendez"
+                }
+            ]
+        }
     ]
 }

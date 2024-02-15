@@ -6,6 +6,12 @@
             "nota final del modulo": 49.5
         }
     ],
-    "Modulos_superaron_60": 0,
-    "Modulos_no_superaron_60": 1
+    "Modulos_superaron_60": 1,
+    "Modulos_no_superaron_60": 1,
+    "2": [
+        {
+            "nombre del modulo": "Fundamentos de programacion",
+            "nota final del modulo": 82.2
+        }
+    ]
 }

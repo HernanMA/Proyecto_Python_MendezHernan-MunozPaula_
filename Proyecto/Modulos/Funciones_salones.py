@@ -112,7 +112,7 @@ def crear_salon():
 
 
 def cargar_datos():
-    with open("Proyecto/Campers.json", "r") as file:
+    with open("Proyecto/campers_Aprobados.json", "r") as file:
         data_campers = json.load(file)
     with open("Proyecto/Salones.json", "r") as file:
         data_salones = json.load(file)
@@ -124,7 +124,7 @@ def guardar_datos(data_salones):
 
 def metercamper_salon():
     data_campers, data_salones = cargar_datos()
-    campers = data_campers["Campers"]
+    campers = data_campers["Aprobados"]
     salones = data_salones["Salones"]
     
     campers_registrados = set()
@@ -168,9 +168,9 @@ def metercamper_salon():
                 salon_encontrado["Campers_registrados"] = []
             salon_encontrado["Campers_registrados"].append({
                 "ID": camper_encontrado["ID"],
-                "N_documento": camper_encontrado["N_documento"],
+                "número de documento": camper_encontrado["número de documento"],
                 "nombre": camper_encontrado["nombre"],
-                "apellido": camper_encontrado["apellido"]
+                "primer apellido": camper_encontrado["primer apellido"]
             })
             
             campers_registrados.add(id_camper)

@@ -30,7 +30,8 @@
             "nombre": "Nose",
             "apellido": "NOSE",
             "N_celular": "323",
-            "Horario": "No asignado"
+            "Horario": "No asignado",
+            "Jornada": "Tarde"
         },
         {
             "ID": 5,
