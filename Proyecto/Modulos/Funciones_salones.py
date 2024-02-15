@@ -2,10 +2,14 @@ import json
 from os import system
 
 def menu_rutas():
-    print("\nRutas disponibles:")
-    print("1. Ruta NodeJS")
-    print("2. Ruta Java")
-    print("3. Ruta NetCore")
+    print("""
+        ========================
+        |  RUTAS DISPONIBLES   |
+        |   1. Ruta NodeJS     |
+        |   2. Ruta Java       |
+        |   3. Ruta NetCore    |
+        ========================
+        """)
     opcion = input("Seleccione el número correspondiente a la ruta a asignar: ")
     system("clear")
 
@@ -20,10 +24,16 @@ def menu_rutas():
         return menu_rutas()
 
 def menu_areas():
-    print("\nAreas de entrenamiento disponibles: ")
-    print("1. Sputnik")
-    print("2. Artemis")
-    print("3. Apolo")
+
+    print("""
+    ================================================    
+    |    Areas de entrenamiento disponibles:       |
+    |        1. Sputnik                            |
+    |        2. Artemis                            |
+    |        3. Apolo                              |
+    ================================================    
+        """)
+
     opcion = input("Seleccione el area de entrenamiento: ")
     system("clear")
 

@@ -58,12 +58,16 @@ def registrar_notas_filtros():
 
     notas = notas_data.get(str(ID_camper), [])
 
-    print("\nMenú de módulos: ")
-    print("1. Fundamentos de programacion (Introduccion a la programacion, PSeint y Python) ")
-    print("2. Programacion Web (HTML, CSS y Bootstrap) ")
-    print("3. Programacion formal (Java, JavaScript, C#) ")
-    print("4. Base de datos (MySQL, MongoDB y PostgreSQL) ")
-    print("5. Backend (.NET Core, Spring Boot, Node.js y Express) ")
+    print("""
+    =======================================================================================
+    |                                  MENÚ DE MODULOS                                    |
+    |     1. Fundamentos de programacion (Introduccion a la programacion, PSeint y Python)|
+    |     2. Programacion Web (HTML, CSS y Bootstrap)                                     |
+    |     3. Programacion formal (Java, JavaScript, C#)                                   |
+    |     4. Base de datos (MySQL, MongoDB y PostgreSQL)                                  |
+    |     5. Backend (.NET Core, Spring Boot, Node.js y Express)                          |
+    =======================================================================================
+        """)
 
     opcion = ingresar_numero("Seleccione el modulo: ")
 
