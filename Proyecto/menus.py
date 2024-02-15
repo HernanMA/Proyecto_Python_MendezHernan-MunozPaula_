@@ -37,7 +37,7 @@ def Menu_Coordinador() :
             |    campers ya registrados          |
             | 4. Registrar notas prueba de       |
             |    admisión                        |
-            | 5. Crear nuevo salón               |
+            | 5. Matricular camper               |
             | 6. Atrás                           |
             |====================================|
         """)

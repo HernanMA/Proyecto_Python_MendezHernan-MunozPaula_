@@ -14,11 +14,11 @@ CAMPER_FIELDS = [
 ]
 
 def load_proyect():
-    with open("Proyecto/campers.json", "r") as outfile:
+    with open("Proyecto/inscritos_Campers.json", "r") as outfile:
         return json.load(outfile)
 
 def save_proyect(proyect):
-    with open("Proyecto/campers.json", "w") as outfile:
+    with open("Proyecto/inscritos_Campers.json", "w") as outfile:
         json.dump(proyect, outfile, indent=4)
 
 def agregar_camper():
@@ -69,35 +69,4 @@ def actualizar_campers():
     else:
         print("Camper no encontrado, por favor ingresa un ID válido.")
 
-def solicitar_nota(mensaje):
-    while True:
-        try:
-            nota = int(input(mensaje))
-            if 0 <= nota <= 100:
-                return nota
-            else:
-                print("Nota no válida, ingresa un valor de 0 a 100")
-        except ValueError:
-            print("Por favor, ingresa un valor numérico.")
 
-def actualizar_estado(camper, nota_practica, nota_teorica):
-    nota_ingreso = nota_practica + nota_teorica / 2
-    if nota_ingreso >= 60:
-        camper["Estado"] = "En proceso de ingreso"
-    else:
-        camper["Estado"] = "Reprobado"
-
-
-def prueba_inicial():
-    Proyect = load_proyect()
-    Campers = Proyect["Campers"]
-
-    ID_camper = solicitar_numero("Ingresa el id del Camper del cual deseas ingresar la nota de su prueba inicial: ")
-    camper = buscar_camper(Campers, ID_camper)
-    if camper is not None:
-        nota_practica = solicitar_nota("Ingrese la nota práctica de la prueba inicial: ")
-        nota_teorica = solicitar_nota("Ingrese la nota teórica de la prueba inicial: ")
-        actualizar_estado(camper, nota_practica, nota_teorica)
-        save_proyect(Proyect)
-    else:
-        print("Camper no encontrado, por favor ingresa un ID válido.")

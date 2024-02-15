@@ -12,15 +12,7 @@
             "Acudiente": "XXXXXXX",
             "N_celular": "22222",
             "N_fijo": "1111",
-            "Estado": "Reprobado",
-            "n\u00famero de documento": "212",
-            "segundo nombre": "sss",
-            "primer apellido": "xxx",
-            "segundo apellido": "sss",
-            "direcci\u00f3n": "wwww",
-            "nombre del acudiente": "sss",
-            "n\u00famero telef\u00f3nico": "333",
-            "n\u00famero fijo": "222"
+            "Estado": "Reprobado"
         },
         {
             "ID": 2,
@@ -104,6 +96,20 @@
             "nombre del acudiente": "cc",
             "n\u00famero telef\u00f3nico": "22",
             "n\u00famero fijo": "22",
+            "Estado": "Inscrito"
+        },
+        {
+            "ID": 8,
+            "n\u00famero de documento": "322112",
+            "nombre": "Paula",
+            "segundo nombre": "sda",
+            "primer apellido": "Munoz",
+            "segundo apellido": "dsfsd",
+            "ciudad": "dfs",
+            "direcci\u00f3n": "sdf",
+            "nombre del acudiente": "dsc",
+            "n\u00famero telef\u00f3nico": "342423",
+            "n\u00famero fijo": "3242",
             "Estado": "Inscrito"
         }
     ]

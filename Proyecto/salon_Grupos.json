@@ -1,0 +1,18 @@
+{
+    "campus": {
+        "grupo": [
+            {
+                "nombre_grupo": " ",
+                "Horario": 2,
+                "trainer": {
+                    "ID": 123,
+                    "Nombre": " "
+                },
+                "Salon": 2,
+                "Ruta": 2,
+                "Fecha_de_inicio": " ",
+                "Fecha_de_fin": " "
+            }
+        ]
+    }
+}

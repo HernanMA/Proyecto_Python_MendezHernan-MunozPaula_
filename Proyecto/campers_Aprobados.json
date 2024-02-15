@@ -1,0 +1,33 @@
+{
+    "Aprobados": [
+        {
+            "ID": 1,
+            "N_documento": "1101",
+            "nombre": "dddd",
+            "nombre2": "WWWW",
+            "apellido": "EEEE",
+            "apellido2": "RRRR",
+            "ciudad": "eeee",
+            "Direccion": "SDSD",
+            "Acudiente": "XXXXXXX",
+            "N_celular": "22222",
+            "N_fijo": "1111",
+            "Estado": "Aprobado"
+        },
+        {
+            "ID": 4,
+            "n\u00famero de documento": "212",
+            "nombre": "efwec",
+            "segundo nombre": "efwede",
+            "primer apellido": "edwedew",
+            "segundo apellido": "dwdew",
+            "ciudad": "efee",
+            "direcci\u00f3n": "efwec",
+            "nombre del acudiente": "dfvdcd",
+            "n\u00famero telef\u00f3nico": "2332",
+            "n\u00famero fijo": "3443",
+            "Estado": "Aprobado"
+        }
+       
+    ]
+}

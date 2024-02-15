@@ -1,7 +1,7 @@
 from Proyecto.menus import Menu_Principal, Menu_Coordinador, Menu_Trainer
 import Proyecto.Modulos.MCamper as CRUDC
 import Proyecto.Modulos.MTrainer as CRUDT
-import Proyecto.Modulos.areas_Entrenamiento as CRUDA
+import Proyecto.Modulos.MMatriculas as CRUDM
 from os import system
 
 def main():
@@ -23,7 +23,7 @@ def main():
                 elif opcion == '4':
                     CRUDC.prueba_inicial()
                 elif opcion == '5':
-                    CRUDA.Crear_Area()        
+                    CRUDM.matriculas()        
                 elif opcion == '6':
                     break
                 else:
